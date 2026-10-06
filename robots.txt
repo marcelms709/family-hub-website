@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marcelms709.github.io/family-hub-website/sitemap.xml
+Sitemap: https://marcelms709.github.io/mitevio-website/sitemap.xml
