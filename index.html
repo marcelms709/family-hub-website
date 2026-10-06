@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Family Hub – Familienalltag gemeinsam organisieren." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Family Hub – Familienalltag gemeinsam organisieren. Kalender, Aufgaben, Einkauf, Schule, Dokumente und mehr für die ganze Familie.">
+  <meta name="theme-color" content="#1688ff">
   <title>Family Hub – Familienalltag gemeinsam organisieren</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-512.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -14,15 +15,20 @@
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="#start">
-      <img src="assets/logo_haus.png" alt="" />
+      <img src="app_logo.png" alt="">
       <span>Family Hub</span>
     </a>
-    <input class="menu-toggle" type="checkbox" id="menu-toggle" />
-    <label class="menu-button" for="menu-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></label>
+
+    <input class="menu-toggle" type="checkbox" id="menu-toggle">
+    <label class="menu-button" for="menu-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </label>
+
     <nav>
       <a href="#start">Startseite</a>
       <a href="#funktionen">Funktionen</a>
       <a href="#tarife">Tarife</a>
+      <a href="#ki">KI-Pakete</a>
       <a href="#ueber">Über Family Hub</a>
       <a href="#faq">FAQ</a>
       <a href="#kontakt">Kontakt</a>
@@ -34,28 +40,37 @@
 <section id="start" class="hero">
   <div class="container hero-grid">
     <div>
-      <div class="status-pill"><span></span> Family Hub befindet sich in Entwicklung</div>
-      <div class="eyebrow">FAMILY HUB</div>
+      <div class="hero-brand">
+        <img class="hero-app-logo" src="app_logo.png" alt="Family Hub App-Logo">
+        <div>
+          <div class="status-pill"><span></span> Family Hub befindet sich in Entwicklung</div>
+          <div class="eyebrow">FAMILY HUB</div>
+        </div>
+      </div>
       <h1>Familienalltag.<br><span>Einfach gemeinsam.</span></h1>
       <p class="lead">Gemeinsam planen. Weniger vergessen. Mehr Zeit füreinander.</p>
-      <p>Termine, Aufgaben, Einkäufe, Essensplanung und wichtige Informationen an einem Ort. Family Hub hilft Familien dabei, ihren Alltag gemeinsam zu organisieren und den Überblick zu behalten.</p>
+      <p>Kalender, Aufgaben, Einkäufe, Essensplanung, Schule, Dokumente und wichtige Informationen an einem Ort. Family Hub hilft Familien, ihren Alltag gemeinsam zu organisieren und den Überblick zu behalten.</p>
+
       <div class="buttons">
         <a class="btn primary" href="#funktionen">Funktionen entdecken</a>
-        <a class="btn ghost" href="#kontakt">Kontakt aufnehmen</a>
+        <a class="btn ghost" href="#tarife">Tarife ansehen</a>
       </div>
+
       <div class="checks">
-        <span>✓ Einfach zu bedienen</span>
-        <span>✓ Für die ganze Familie</span>
-        <span>✓ Gemeinsam organisiert</span>
+        <span>✓ Basic dauerhaft kostenlos</span>
+        <span>✓ Limits gelten pro Familie</span>
+        <span>✓ Gemeinsam synchronisiert</span>
       </div>
+
       <div class="hero-stats">
-        <div><strong>1</strong><span>zentraler Ort</span></div>
-        <div><strong>5+</strong><span>Kernbereiche</span></div>
         <div><strong>0 €</strong><span>Basic dauerhaft</span></div>
+        <div><strong>250 MB</strong><span>Speicher in Basic</span></div>
+        <div><strong>20</strong><span>KI-Aktionen / Familie</span></div>
       </div>
     </div>
+
     <div class="hero-image">
-      <img src="assets/bild_app_mockup.png" alt="Vorschau der Family-Hub-App" />
+      <img src="assets/bild_app_mockup.png" alt="Vorschau der Family-Hub-App">
     </div>
   </div>
 </section>
@@ -67,45 +82,84 @@
       <h2>Alles Wichtige an einem Ort</h2>
       <p>Die zentralen Bereiche für euren Familienalltag – übersichtlich, gemeinsam und leicht erreichbar.</p>
     </div>
+
     <div class="cards five">
-      <article class="card c-blue"><img src="assets/icon_kalender.png" alt=""><h3>Kalender</h3><p>Gemeinsame Termine planen und wichtige Ereignisse im Blick behalten.</p></article>
-      <article class="card c-green"><img src="assets/icon_aufgaben.png" alt=""><h3>Aufgaben</h3><p>Aufgaben verteilen, gemeinsam organisieren und Erledigtes nachvollziehen.</p></article>
-      <article class="card c-orange"><img src="assets/icon_einkauf.png" alt=""><h3>Einkauf</h3><p>Eine gemeinsame Einkaufsliste, die jederzeit ergänzt werden kann.</p></article>
-      <article class="card c-violet"><img src="assets/icon_essensplan.png" alt=""><h3>Essensplan</h3><p>Mahlzeiten für die Woche planen und den Einkauf besser vorbereiten.</p></article>
-      <article class="card c-pink"><img src="assets/icon_ankuendigungen.png" alt=""><h3>Ankündigungen</h3><p>Wichtige Informationen schnell mit der ganzen Familie teilen.</p></article>
+      <article class="card c-blue">
+        <img src="assets/icon_kalender.png" alt="">
+        <h3>Kalender</h3>
+        <p>Gemeinsame Termine planen und wichtige Ereignisse im Blick behalten.</p>
+      </article>
+      <article class="card c-green">
+        <img src="assets/icon_aufgaben.png" alt="">
+        <h3>Aufgaben</h3>
+        <p>Aufgaben verteilen, gemeinsam organisieren und Erledigtes nachvollziehen.</p>
+      </article>
+      <article class="card c-orange">
+        <img src="assets/icon_einkauf.png" alt="">
+        <h3>Einkauf</h3>
+        <p>Gemeinsame Listen mit schneller Eingabe und praktischer Organisation.</p>
+      </article>
+      <article class="card c-violet">
+        <img src="assets/icon_essensplan.png" alt="">
+        <h3>Essensplan</h3>
+        <p>Mahlzeiten planen und den Einkauf besser vorbereiten.</p>
+      </article>
+      <article class="card c-pink">
+        <img src="assets/icon_ankuendigungen.png" alt="">
+        <h3>Ankündigungen</h3>
+        <p>Wichtige Informationen schnell mit der ganzen Familie teilen.</p>
+      </article>
+    </div>
+
+    <div class="section-head compact">
+      <div class="eyebrow">WEITERE BEREICHE</div>
+      <h2>Family Hub wächst mit euren Aufgaben</h2>
+      <p>Weitere Module werden schrittweise ergänzt und ausgebaut.</p>
+    </div>
+
+    <div class="module-grid">
+      <article class="module-card">
+        <img src="assets/icon_schule.png" alt="">
+        <div><span class="tag free">Basic</span><h3>Schule</h3><p>Schulalltag und wichtige Informationen gemeinsam organisieren.</p></div>
+      </article>
+
+      <article class="module-card">
+        <img src="assets/icon_haushalt.png" alt="">
+        <div><span class="tag">Im Ausbau</span><h3>Haushalt</h3><p>Haushaltsorganisation als weiterer zentraler Familienbereich.</p></div>
+      </article>
+
+      <article class="module-card">
+        <img src="assets/icon_budget.png" alt="">
+        <div><span class="tag plus">Ab Plus</span><h3>Budget</h3><p>Konten, Einnahmen, Ausgaben, Kategorien, Daueraufträge, Budgets und Auswertungen.</p></div>
+      </article>
+
+      <article class="module-card">
+        <img src="assets/icon_dokumente.png" alt="">
+        <div><span class="tag">Nach Tarif gestaffelt</span><h3>Dokumente</h3><p>Familien-Dokumente in einer frei strukturierbaren Ordnerablage speichern.</p></div>
+      </article>
+
+      <article class="module-card">
+        <img src="assets/icon_rezepte.png" alt="">
+        <div><span class="tag premium-tag">Geplant</span><h3>Rezepte</h3><p>Rezepte, Favoriten, Portionsanpassung sowie Verknüpfung mit Essensplan und Einkauf.</p></div>
+      </article>
     </div>
   </div>
 </section>
 
 <section id="ueber" class="section">
   <div class="container split family">
-    <div class="photo-card"><img src="assets/bild_familie.png" alt="Familie organisiert gemeinsam den Alltag"></div>
+    <div class="photo-card">
+      <img src="assets/bild_familie.png" alt="Familie organisiert gemeinsam den Alltag">
+    </div>
     <div>
       <div class="eyebrow green">FÜR FAMILIEN GEMACHT</div>
       <h2>Gemeinsam statt verteilt</h2>
-      <p>Family Hub verbindet die ganze Familie. Gemeinsame Termine, Aufgaben und Informationen bleiben an einem Ort.</p>
-      <p>Auch Kinder ohne eigene E-Mail-Adresse können als Familienmitglieder eingebunden werden.</p>
+      <p>Family Hub verbindet die ganze Familie. Gemeinsame Termine, Aufgaben, Listen, Informationen und weitere Familienbereiche bleiben an einem Ort.</p>
+      <p>Familienmitglieder werden gemeinsam synchronisiert. Auch Kinder ohne eigene E-Mail-Adresse können als Familienmitglieder eingebunden werden.</p>
       <div class="mini-pills">
-        <span>Gemeinsam planen</span><span>Besser organisiert</span><span>Mehr Zeit füreinander</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="split premium">
-      <div>
-        <div class="eyebrow">MEHR MÖGLICHKEITEN</div>
-        <h2>Erweiterte Premium-Bereiche</h2>
-        <p>Zusätzlich zu den grundlegenden Funktionen bietet Family Hub erweiterte Bereiche für Familien, die noch mehr zentral organisieren möchten.</p>
-      </div>
-      <div class="premium-icons">
-        <div><img src="assets/icon_rezepte.png" alt=""><span>Rezepte</span></div>
-        <div><img src="assets/icon_dokumente.png" alt=""><span>Dokumente</span></div>
-        <div><img src="assets/icon_haushalt.png" alt=""><span>Haushalt</span></div>
-        <div><img src="assets/icon_budget.png" alt=""><span>Budget</span></div>
-        <div><img src="assets/icon_schule.png" alt=""><span>Schule</span></div>
+        <span>Gemeinsam planen</span>
+        <span>Automatisch synchronisiert</span>
+        <span>Mehr Übersicht</span>
       </div>
     </div>
   </div>
@@ -115,39 +169,85 @@
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">TARIFE</div>
-      <h2>Passend für jede Familie</h2>
-      <p>Basic bleibt dauerhaft kostenlos. Premium und Pro erweitern Family Hub um zusätzliche Möglichkeiten.</p>
+      <h2>Drei Tarife. Immer pro Familie.</h2>
+      <p>Basic bleibt dauerhaft kostenlos. Speicher- und KI-Kontingente gelten gemeinsam für die ganze Familie – nicht pro Person.</p>
     </div>
+
     <div class="pricing">
       <article class="price-card">
-        <div class="plan">Basic</div><div class="price">0 €</div><p>Die wichtigsten Funktionen für die gemeinsame Familienorganisation.</p><strong>Dauerhaft kostenlos</strong>
+        <div class="plan">Basic</div>
+        <div class="price">0 €</div>
+        <p class="price-sub">dauerhaft kostenlos</p>
+        <ul class="plan-list">
+          <li><strong>250 MB</strong> Speicher pro Familie</li>
+          <li><strong>20</strong> KI-Aktionen pro Familie / Monat</li>
+          <li>Familien-Kernfunktionen</li>
+          <li>Schule inklusive</li>
+        </ul>
       </article>
+
       <article class="price-card featured">
         <div class="popular-badge">Empfohlen</div>
-        <div class="plan">Premium</div><div class="price">Später</div><p>Zusätzliche Bereiche wie Rezepte, Dokumente, Haushalt, Budget und Schule.</p><strong>Mehr Funktionen</strong>
+        <div class="plan">Plus</div>
+        <div class="price">4,99 €<small>/Monat</small></div>
+        <p class="price-sub">ca. 49,99 € / Jahr</p>
+        <ul class="plan-list">
+          <li><strong>2 GB</strong> Speicher pro Familie</li>
+          <li><strong>250</strong> KI-Aktionen pro Familie / Monat</li>
+          <li>Budget-Bereich inklusive</li>
+          <li>Mehr Raum für gemeinsame Familieninhalte</li>
+        </ul>
       </article>
+
       <article class="price-card">
-        <div class="plan">Pro</div><div class="price">Später</div><p>Mehr Speicher, höhere Nutzungslimits und zusätzliche intelligente Funktionen.</p><strong>Maximaler Umfang</strong>
+        <div class="plan">Premium</div>
+        <div class="price">8,99 €<small>/Monat</small></div>
+        <p class="price-sub">ca. 89,99 € / Jahr</p>
+        <ul class="plan-list">
+          <li><strong>5 GB</strong> Speicher pro Familie</li>
+          <li><strong>800</strong> KI-Aktionen pro Familie / Monat</li>
+          <li>Budget-Bereich inklusive</li>
+          <li>Höchste Familien-Kontingente</li>
+        </ul>
       </article>
     </div>
+
+    <p class="pricing-note">Die App befindet sich noch in Entwicklung. Tarifinhalte können bis zum offiziellen Start technisch weiter verfeinert werden; die hier gezeigte Staffelung entspricht dem aktuellen Planungsstand.</p>
   </div>
 </section>
 
+<section id="ki" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">KI-ZUSATZPAKETE</div>
+      <h2>Mehr KI-Aktionen bei Bedarf</h2>
+      <p>Zusätzliche KI-Aktionen sind als Einmalkauf für das gemeinsame Familienkontingent geplant – ohne zusätzliches Abo.</p>
+    </div>
+
+    <div class="addon-grid">
+      <article class="addon-card"><span>KI Mini</span><strong>+100 Aktionen</strong><b>0,99 €</b></article>
+      <article class="addon-card"><span>KI Plus</span><strong>+300 Aktionen</strong><b>1,99 €</b></article>
+      <article class="addon-card"><span>KI Max</span><strong>+1.000 Aktionen</strong><b>4,99 €</b></article>
+    </div>
+
+    <div class="info-box">
+      <strong>Familienweit gedacht:</strong> Zuerst wird das reguläre Monatskontingent genutzt, danach zusätzliche gekaufte Aktionen. Zusatzaktionen sind nach aktuellem Plan bis zu 12 Monate gültig.
+    </div>
+  </div>
+</section>
 
 <section class="section labs">
   <div class="container labs-box">
     <div>
       <div class="eyebrow">HINTER FAMILY HUB</div>
       <h2>Entwickelt mit Blick auf den Familienalltag</h2>
-      <p>Family Hub ist ein privat entwickeltes Projekt von Marcel Schultis. Für die spätere gewerbliche Weiterentwicklung ist der Name <strong>Schultis Labs</strong> vorgesehen.</p>
-      <p>Bis zur Gründung bleibt Family Hub ein privates Softwareprojekt. Sobald Schultis Labs offiziell gegründet ist, werden die rechtlichen Angaben entsprechend angepasst.</p>
+      <p>Family Hub ist derzeit ein privat entwickeltes Projekt von Marcel Schultis. Für die spätere gewerbliche Weiterentwicklung ist <strong>Schultis Labs</strong> als zukünftiges Unternehmen vorgesehen.</p>
+      <p>Bis zur Gründung bleibt Family Hub ein privates Softwareprojekt. Die rechtlichen Angaben werden bei einer späteren Gründung entsprechend aktualisiert.</p>
     </div>
+
     <div class="labs-mark">
       <div class="labs-badge">SL</div>
-      <div>
-        <strong>Schultis Labs</strong>
-        <span>zukünftige Marke / Firma</span>
-      </div>
+      <div><strong>Schultis Labs</strong><span>zukünftiges Unternehmen</span></div>
     </div>
   </div>
 </section>
@@ -169,11 +269,13 @@
       <div class="eyebrow">FAQ</div>
       <h2>Häufig gestellte Fragen</h2>
     </div>
-    <details><summary>Was ist Family Hub?</summary><p>Family Hub ist eine App zur gemeinsamen Organisation des Familienalltags mit Kalender, Aufgaben, Einkauf, Essensplan, Ankündigungen und Familienverwaltung.</p></details>
+
+    <details><summary>Was ist Family Hub?</summary><p>Family Hub ist eine App zur gemeinsamen Organisation des Familienalltags mit Kalender, Aufgaben, Einkauf, Essensplan, Ankündigungen, Familienverwaltung und weiteren Bereichen.</p></details>
     <details><summary>Ist Family Hub schon verfügbar?</summary><p>Family Hub befindet sich aktuell noch in der Entwicklung und wird Schritt für Schritt fertiggestellt und getestet.</p></details>
-    <details><summary>Wird Family Hub kostenlos sein?</summary><p>Ja. Der Basic-Tarif soll dauerhaft kostenlos bleiben. Zusätzlich sind Premium- und Pro-Tarife geplant.</p></details>
+    <details><summary>Bleibt Basic kostenlos?</summary><p>Ja. Basic ist mit 0 € dauerhaft kostenlos geplant.</p></details>
+    <details><summary>Gelten Speicher und KI-Limits pro Person?</summary><p>Nein. Die Kontingente gelten gemeinsam pro Familie beziehungsweise Haushalt.</p></details>
     <details><summary>Können Kinder eingebunden werden?</summary><p>Ja. Kinder können auch ohne eigene E-Mail-Adresse als Familienmitglieder eingebunden werden.</p></details>
-    <details><summary>Welche Premium-Bereiche gibt es?</summary><p>Unter anderem Rezepte, Dokumente, Haushalt, Budget und Schule.</p></details>
+    <details><summary>Sind Family AI und KI-Rezepte schon aktiv?</summary><p>Nein. Diese KI-Funktionen sind vorgesehen und werden später freigeschaltet.</p></details>
   </div>
 </section>
 
@@ -205,9 +307,21 @@
 
 <footer>
   <div class="container footer-grid">
-    <div class="brand footer-brand"><img src="assets/logo_haus.png" alt=""><span>Family Hub</span></div>
-    <div>Gemeinsam planen. Weniger vergessen. Mehr Zeit füreinander.<br><small>Ein Projekt von Schultis Labs · © 2026 Family Hub</small></div>
-    <div class="footer-links"><a href="#kontakt">Kontakt</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div>
+    <div class="brand footer-brand">
+      <img src="app_logo.png" alt="">
+      <span>Family Hub</span>
+    </div>
+
+    <div>
+      Gemeinsam planen. Weniger vergessen. Mehr Zeit füreinander.<br>
+      <small>Privates Projekt von Marcel Schultis · Schultis Labs als zukünftiges Unternehmen vorgesehen · © 2026 Family Hub</small>
+    </div>
+
+    <div class="footer-links">
+      <a href="#kontakt">Kontakt</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
   </div>
 </footer>
 </body>
