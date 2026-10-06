@@ -3,3 +3,57 @@
 .legal-title{font-size:clamp(2.2rem,5vw,4rem);margin-bottom:28px}
 .legal h2{font-size:1.35rem;margin-top:30px}
 .legal-note{margin-top:34px;padding:18px 20px;border-radius:18px;background:#f7fbff;border:1px solid #e3eef9;color:#45637f}
+
+:root{--blue:#1688ff;--navy:#0f2a52;--shadow:0 18px 45px rgba(35,76,120,.10)}
+body{overflow-x:hidden}
+.site-header{box-shadow:0 8px 24px rgba(26,63,102,.04)}
+.site-header nav a{position:relative;font-weight:650}
+.site-header nav a:after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--blue);transform:scaleX(0);transition:.22s}
+.site-header nav a:hover:after{transform:scaleX(1)}
+.menu-toggle,.menu-button{display:none}
+.hero{position:relative;overflow:hidden;padding:72px 0 52px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;opacity:.45}
+.hero:before{width:360px;height:360px;background:#cfeaff;left:-160px;top:-150px}
+.hero:after{width:300px;height:300px;background:#dcf6e5;right:-120px;bottom:-170px}
+.hero-grid{position:relative;z-index:1}
+.status-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.72);border:1px solid rgba(22,136,255,.14);padding:8px 12px;border-radius:999px;font-size:.82rem;font-weight:750;margin-bottom:16px;box-shadow:0 8px 24px rgba(41,93,145,.06)}
+.status-pill span{width:8px;height:8px;background:#5cc87e;border-radius:50%;box-shadow:0 0 0 5px rgba(92,200,126,.15)}
+h1 span{background:linear-gradient(90deg,#1688ff,#6e73ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{box-shadow:0 12px 24px rgba(22,136,255,.22)}
+.hero-image img{transition:transform .35s ease}
+.hero-image:hover img{transform:translateY(-5px) rotate(.3deg)}
+.hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats strong{font-size:1.4rem;color:var(--navy)}
+.hero-stats span{font-size:.8rem;color:#607c97}
+.card,.price-card,.premium-icons div{transition:transform .22s ease,box-shadow .22s ease}
+.card:hover,.premium-icons div:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.photo-card img{box-shadow:var(--shadow)}
+.price-card{position:relative}
+.price-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(34,64,99,.10)}
+.popular-badge{position:absolute;top:-13px;right:24px;background:linear-gradient(90deg,#6f75ff,#9a6dff);color:white;font-size:.76rem;font-weight:800;padding:7px 12px;border-radius:999px}
+.launch{padding-top:24px}
+.launch-box{background:linear-gradient(135deg,#102d58,#174a80);color:white;border-radius:34px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:30px;box-shadow:0 22px 50px rgba(15,42,82,.16)}
+.launch-box .eyebrow{color:#91c9ff}.launch-box h2{max-width:650px}.launch-box p{max-width:680px;color:#dcecff}
+.store-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.store-pill{display:inline-block;min-width:150px;background:white;color:#12335c;border-radius:16px;padding:11px 16px;font-weight:800;text-align:left;line-height:1.05}
+.store-pill small{font-weight:600;color:#6b8298}
+footer small{opacity:.75}
+@media(max-width:900px){
+  .menu-button{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:10px}
+  .menu-button span{display:block;width:24px;height:2px;background:#0f2a52;border-radius:4px}
+  .site-header nav{display:none;position:absolute;top:66px;left:4%;right:4%;background:white;border:1px solid #e6eef7;border-radius:20px;padding:14px;box-shadow:0 18px 45px rgba(26,63,102,.14);flex-direction:column;gap:6px}
+  .site-header nav a{padding:10px 12px;border-radius:12px}
+  .site-header nav a:hover{background:#f4f9ff}
+  .menu-toggle:checked ~ nav{display:flex}
+  .launch-box{display:block}
+  .store-row{justify-content:flex-start;margin-top:22px}
+}
+@media(max-width:560px){
+  .hero{padding-top:46px}
+  .hero-stats{gap:18px}
+  .hero-stats div{min-width:90px}
+  .launch-box{padding:28px 22px}
+}
