@@ -99,9 +99,17 @@ p{color:var(--text)}
   padding:18px;
   box-shadow:0 20px 45px rgba(29,73,117,.12)
 }
+.hero-image-card{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
 .hero-image-card img{
   display:block;
   width:100%;
+  height:auto;
+  object-fit:contain;
   border-radius:26px;
   box-shadow:0 16px 34px rgba(34,77,120,.14)
 }
@@ -113,6 +121,7 @@ p{color:var(--text)}
 .section-head.compact{margin-top:58px}
 .cards{display:grid;gap:18px}
 .cards.five{grid-template-columns:repeat(5,1fr)}
+.cards.six{grid-template-columns:repeat(3,1fr)}
 .card{
   padding:26px 18px;border-radius:28px;text-align:center;min-height:250px;
   transition:transform .22s ease,box-shadow .22s ease
@@ -241,6 +250,7 @@ footer small{opacity:.78}
 @media(max-width:1000px){
   .site-header nav{gap:13px;font-size:.86rem}
   .cards.five{grid-template-columns:repeat(3,1fr)}
+  .cards.six{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:900px){
   .menu-button{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:10px}
@@ -255,6 +265,7 @@ footer small{opacity:.78}
   .menu-toggle:checked ~ nav{display:flex}
   .hero-grid,.split,.labs-box{grid-template-columns:1fr}
   .cards.five{grid-template-columns:repeat(2,1fr)}
+  .cards.six{grid-template-columns:repeat(2,1fr)}
   .module-grid,.pricing,.addon-grid{grid-template-columns:1fr}
   .price-card.featured,.price-card.featured:hover{transform:none}
   .contact-box,.footer-grid{display:block}
@@ -268,6 +279,7 @@ footer small{opacity:.78}
   .hero-stats{gap:18px}
   .hero-stats div{min-width:90px}
   .cards.five{grid-template-columns:1fr}
+  .cards.six{grid-template-columns:1fr}
   .module-card{display:block}
   .module-card img{margin-bottom:10px}
   h1{font-size:2.35rem}
