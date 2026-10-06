@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marcelms709.github.io/family-hub-website/sitemap.xml

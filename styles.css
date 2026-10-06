@@ -285,3 +285,11 @@ footer small{opacity:.78}
   h1{font-size:2.35rem}
   .section{padding:54px 0}
 }
+
+/* V4 Feinschliff */
+.hero-image-card{min-height:420px}
+.hero-image-card img{max-height:520px}
+@media(max-width:900px){
+  .hero-image-card{min-height:auto}
+  .hero-image-card img{max-height:none}
+}
