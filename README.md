@@ -6,7 +6,7 @@ Mitevio ist eine Familien-App für gemeinsame Organisation von Kalendern, Aufgab
 
 ## Website
 
-https://marcelms709.github.io/mitevio-website/
+https://mitevio.de/
 
 ## Status
 
@@ -22,7 +22,7 @@ Speicher- und KI-Limits gelten pro Familie.
 
 ## Support
 
-mitevio.support@gmail.com
+support@mitevio.de
 
 ## Entwicklung
 
